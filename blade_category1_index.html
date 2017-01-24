@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<meta charset="UTF-8">
+<title>Blade Category</title>
+
+  <!-- ↑OGP↑ -->
+<link rel="stylesheet" type="text/css" href="css/import.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slider-pro/1.3.0/css/slider-pro.min.css">
+  <link rel="stylesheet" type="text/css" href="css/slider.css">
+  <style>
+    .product-box:first-child {
+      border-top: none;
+    }
+  </style>
+</head>
+<body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/retina.js"></script>
+  <script type="text/javascript" src="js/ofi.browser.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/slider-pro/1.3.0/js/jquery.sliderPro.min.js"></script>
+  <script src="http://use.edgefonts.net/roboto:n9,i9,n7,i7,i4,n3,i3,n5,i5,n4,n2,i2:all.js"></script>
+
+<script>
+  $(function () { objectFitImages() });
+  $(function(){
+    $(document).on('click touchend', function(event) {
+      if (!$(event.target).closest('nav.gnavi li dl').length) {
+        $('nav.gnavi li dl').removeClass("active");
+      }
+    });
+  $('nav.gnavi li dt').on("click" , function(){
+    $(this).parent("dl").toggleClass("active");
+    $('nav.gnavi li dl dt').not($(this)).parent("dl").removeClass("active");
+  });
+  });
+  $(function() {
+    //クリックしたときのファンクションをまとめて指定
+    $('.tab li').click(function() {
+
+      //.index()を使いクリックされたタブが何番目かを調べ、
+      //indexという変数に代入します。
+      var index = $('.tab li').index(this);
+
+      //コンテンツを一度すべて非表示にし、
+      $('.tab_content > div').css('display','none');
+
+      //クリックされたタブと同じ順番のコンテンツを表示します。
+      $('.tab_content > div').eq(index).css('display','block');
+
+      //一度タブについているクラスselectを消し、
+      $('.tab li').removeClass('select');
+
+      //クリックされたタブのみにクラスselectをつけます。
+      $(this).addClass('select')
+    });
+  });
+</script>
+
+<!--↓CONTAINER↓-->
+
+<div id="CONTAINER">
+  <!--↓HEADER↓-->
+  <div id="HEADER">
+   <div class="inner">
+    <p class="logo"><img src="img/common/logo.png" alt=""></p>
+    <nav class="gnavi">
+      <ul>
+        <li class="about">
+          <dl>
+            <dt><span>オルファ製品について</span></dt>
+            <dd>
+              <ul class="sub_navi">
+                <li>
+                  <p class="img"><a href="#"><img src="img/layout/gnavi/thumb01.png" height="130" alt=""></a></p>
+                  <p class="link_text"><a href="#">オルファカッターの誕生秘話</a></p>
+                </li>
+                <li>
+                  <p class="img"><a href="#"><img src="img/layout/gnavi/thumb02.png" height="130" alt=""></a></p>
+                  <p class="link_text"><a href="#">オルファカッターの特徴</a></p>
+                </li>
+                <li>
+                  <p class="img"><a href="#"><img src="img/layout/gnavi/thumb03.png" height="130" alt=""></a></p>
+                  <p class="link_text"><a href="#">オルファカッターの種類・用途</a></p>
+                </li>
+                <li>
+                  <p class="img"><a href="#"><img src="img/layout/gnavi/thumb04.png" height="130" alt=""></a></p>
+                  <p class="link_text"><a href="#">オルファカッターの正しい使い方</a></p>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+        </li>
+        <li class="product">
+          <dl>
+            <dt><span>製品情報</span></dt>
+            <dd>
+              <ul class="sub_navi">
+                <li>
+                  <p class="img"><a href="#"><img src="img/layout/gnavi/thumb05.png" height="130" alt=""></a></p>
+                  <p class="link_text"><a href="#">種類別商品一覧</a></p>
+                </li>
+                <li>
+                  <p class="img"><a href="#"><img src="img/layout/gnavi/thumb06.png" height="130" alt=""></a></p>
+                  <p class="link_text"><a href="#">シリーズ別商品一覧</a></p>
+                </li>
+                <li>
+                  <p class="img"><a href="#"><img src="img/layout/gnavi/thumb07.png" height="130" alt=""></a></p>
+                  <p class="link_text"><a href="#">替刃一覧</a></p>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+        </li>
+        <li><a href="#">会社情報</a></li>
+        <li><a href="#">よくある質問</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+      <ul>
+        <li class="search"><a href="#">製品検索</a></li>
+        <li class="lang"><a href="#">ENGLISH</a></li>
+      </ul>
+    </nav>
+     <div class="slide_menu_button"></div>
+    </div>
+  </div>
+  <!--↑HEADER↑-->
+
+  <div class="keyvisual">
+    <h2>BLADE TYPE</h2>
+    <p>特大H型刃</p>
+    <ul class="slider_buttons">
+      <li><a target="_blank" href="#"><span>商品明細表</span></a></li>
+      <li><a href="#"><span>サイトマップ</span></a></li>
+    </ul>
+  </div>
+  <div class="bread-list">
+    <ul class="clearfix">
+      <li><a href="#">トップページ</a></li>
+      <li><a href="#">替刃種類別商品一覧</a></li>
+      <li>特大H型刃</li>
+    </ul>
+  </div>
+  <!--↓MAIN↓-->
+  <div id="MAIN">
+    <div id="01" class="product-box" style="background-image: url(img/page/blade/category1/index/bg_img01.jpg);">
+      <div>
+        <p class="ttl">オルファカッター替刃（大）</p>
+        <p class="txt">リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分</p>
+        <p class="detail"><a class="edge_button" href="#"><span>詳しくはこちら</span></a></p>
+      </div>
+    </div>
+    <div id="02" class="product-box" style="background-image: url(img/page/blade/category1/index/bg_img02.jpg);">
+      <div>
+        <p class="ttl">特専黒刃（大）</p>
+        <p class="txt">リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分</p>
+        <p class="detail"><a class="edge_button" href="#"><span>詳しくはこちら</span></a></p>
+      </div>
+    </div>
+    <div id="03" class="product-box" style="background-image: url(img/page/blade/category1/index/bg_img03.jpg);">
+      <div>
+        <p class="ttl">スピードブレード（大）</p>
+        <p class="txt">リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分リード分</p>
+        <p class="detail"><a class="edge_button" href="#"><span>詳しくはこちら</span></a></p>
+      </div>
+    </div>
+  </div>
+  <!--↑MAIN↑-->
+  <!--↓FOOTER↓-->
+  
+  <div id="FOOTER">
+    <div class="inner">
+      <p class="footer_text">日本国内向けパッケージ商品につきましては、国内仕様品につき取扱説明や注意書きが日本表記のみとなっております。製品の安全上、日本国内でのみ ご販売・ご使用ください。</p>
+      <div class="footer_inner">
+        <div>
+          <p class="logo"><img src="img/common/logo.png" alt="" class="mw100"></p>
+          <div class="address">
+            <p class="bold">オルファ株式会社</p>
+            <p>〒537-0021<br>
+              大阪市東成区東中本2丁目11番8号<br>
+              TEL：<a href="tel:0669728101">（06）6972-8101（代）</a><br>
+              FAX：（06）6972-8114
+            </p>
+          </div>
+        </div>
+        <div class="pc flex">
+          <ul class="footer_nav">
+            <li><a href="#">折る刃式カッターの誕生秘話</a></li>
+            <li>
+              オルファカッターについて
+              <p><a href="#">オルファカッターの種類と用途</a></p>
+            </li>
+            <li><a href="#">オルファカッターの正しい使い方</a></li>
+            <li><a href="#">よくある質問</a></li>
+          </ul>
+          <ul class="footer_nav">
+            <li>
+              種類別商品一覧
+              <p><a href="#">種類別商品一覧</a></p>
+              <p><a href="#">シリーズ別商品一覧</a></p>
+              <p><a href="#">替刃一覧</a></p>
+            </li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">会社情報</a></li>
+            <li><a href="#">お知らせ</a></li>
+          </ul>
+        </div>
+        <div class="pc">
+          <p class="mB03"><a href="#" class="fade"><img src="img/layout/footer/bnr01.png" width="290" alt="" class="mw100"></a></p>
+          <p class="mB03"><a href="#" class="fade"><img src="img/layout/footer/bnr02.png" width="290" alt="" class="mw100"></a></p>
+          <p class="mB03"><a href="#" class="fade"><img src="img/layout/footer/bnr03.png" width="290" alt="" class="mw100"></a></p>
+        </div>
+      </div>
+      <div class="copy">(C)Copyright 2016 OLFA CORPORATION.ALL Rights Reserved.</div>
+    </div>
+    <p class="pagetop"><a href="#" class="fade"><img src="img/layout/footer/pagetop.png" width="93" alt="" class="mw100"></a></p>
+  </div>
+  <!--↑FOOTER↑-->
+  
+</div>
+<!--↑CONTAINER↑-->
+
+<!--横から出てくるメニュー-->
+<div id="slide_menu">
+  <div>
+    <ul class="slide_menu_list01 mB25">
+      <li>
+        <a href="#">カッターナイフの誕生秘話</a>
+      </li>
+      <li>
+        <a href="#">オルファ製品について</a>
+      </li>
+      <li class="child">
+        <a href="#">- オルファ製品の種類と用途</a>
+      </li>
+      <li>
+        <a href="#">カッターナイフの正しい使い方</a>
+      </li>
+      <li>
+        <a href="#">よくある質問</a>
+      </li>
+      <li>
+        <a href="#">種類別商品一覧</a>
+      </li>
+      <li class="child">
+        <a href="#">- 種類別商品一覧</a>
+      </li>
+      <li class="child">
+        <a href="#">- シリーズ別商品一覧</a>
+      </li>
+      <li class="child">
+        <a href="#">- 替刃一覧</a>
+      </li>
+      <li>
+        <a href="#">お問い合わせ</a>
+      </li>
+      <li>
+        <a href="#">会社情報</a>
+      </li>
+      <li>
+        <a href="#">お知らせ</a>
+      </li>
+    </ul>
+    <p class="centerText mB04"><a href="#"><img src="img/layout/footer/bnr01.png" width="290" alt="" class="mw100"></a></p>
+    <p class="centerText mB04"><a href="#"><img src="img/layout/footer/bnr02.png" width="290" alt="" class="mw100"></a></p>
+    <p class="centerText"><a href="#"><img src="img/layout/footer/bnr03.png" width="290" alt="" class="mw100"></a></p>
+  </div>
+</div>
+<!--横から出てくるメニュー-->
+</body>
+</html>

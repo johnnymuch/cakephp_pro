@@ -1,0 +1,41 @@
+.sp_controller {
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  padding-top: 0;
+  height: 22px;
+  text-align: center;
+}
+.sp_arrows {
+  display: inline-block;
+  width: 13px;
+  height: 22px;
+  background: url(../img/arrow01.png) center/13px no-repeat;
+  vertical-align: middle;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.sp_arrow_next {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.sp-buttons {
+  display: inline-block;
+  width: auto;
+  position: static;
+  padding-top: 0;
+  height: 22px;
+}
+.sp-button {
+  margin: 0 4px;
+  box-sizing: content-box;
+  background-color: #FFF;
+  border: none;
+  vertical-align: middle;
+}
+.sp-selected-button {
+  border: 3.5px solid #FFF;
+  background: none;
+}
